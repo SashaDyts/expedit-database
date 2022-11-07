@@ -12,7 +12,7 @@ const shopSchema = new Schema({
   },
 
   coords: {
-    type: String,
+    type: Object,
     required: [true, 'Set coords'],
   },
 
