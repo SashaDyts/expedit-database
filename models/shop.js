@@ -20,7 +20,11 @@ const shopSchema = new Schema({
     type: String,
     required: [true, 'Set shop owner'],
   },
-  notes: { type: String },
+  notes: {
+    type: String,
+    required: [true, 'Set note'],
+  },
+  shopImgURL: { type: String },
 
   token: String,
 });

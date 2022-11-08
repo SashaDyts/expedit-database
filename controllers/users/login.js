@@ -10,7 +10,7 @@ const { RequestError } = require('../../helpers');
 const login = async (req, res) => {
   const { name, password } = req.body;
   const user = await User.findOne({ name });
-
+  console.log('lox');
   if (!user) {
     throw RequestError(401, 'Name or password is wrong');
   }
