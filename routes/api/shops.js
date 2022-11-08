@@ -9,7 +9,7 @@ router.get('/', authenticate, ctrlWrapper(shopsCtrl.getAll));
 router.get('/:shopId', authenticate, isValidId, ctrlWrapper(shopsCtrl.getById));
 router.post('/', authenticate, ctrlWrapper(shopsCtrl.addShop));
 router.post(
-  '/photo',
+  '/photo/:shopId',
   authenticate,
   upload.single('shophoto'),
   ctrlWrapper(shopsCtrl.addShopPhoto)
