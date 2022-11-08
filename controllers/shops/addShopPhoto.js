@@ -18,7 +18,7 @@ const addShopPhoto = async (req, res) => {
 
   await Shop.findByIdAndUpdate(shopId, { shopImgURL });
 
-  res.json({ shopImgURL });
+  res.json({ shopImgURL, shopId });
 };
 
 module.exports = addShopPhoto;
