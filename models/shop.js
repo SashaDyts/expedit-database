@@ -18,11 +18,9 @@ const shopSchema = new Schema({
 
   shopOwner: {
     type: String,
-    required: [true, 'Set shop owner'],
   },
   notes: {
     type: String,
-    required: [true, 'Set note'],
   },
   shopImgURL: { type: String },
 
