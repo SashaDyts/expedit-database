@@ -18,6 +18,7 @@ const shopSchema = new Schema({
 
   shopOwner: {
     type: String,
+    required: [true, 'Set shop owner name'],
   },
   notes: {
     type: String,
